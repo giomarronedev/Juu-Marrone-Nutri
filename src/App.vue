@@ -12,7 +12,7 @@
             eu estou aqui para guiar você nessa jornada!
           </p>
         </div>
-        <a href="https://wa.me/5551999004881" target="_blank"
+        <a href="#goals" target="_blank"
           ><button>Vamos começar!</button></a
         >
         <img class="bfr bfr-1" src="./assets/ellipse-1.svg" />
@@ -539,6 +539,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 2rem;
   }
 
   .welcome button {
