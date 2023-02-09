@@ -673,7 +673,7 @@ html {
   
   #contact .content img {
     border-radius: 20px;
-    box-shadow: 0px 0px 10px var(--brand-purple);
+    border: 1px solid var(--brand-purple);
   }
   
   #contact .content .text {
