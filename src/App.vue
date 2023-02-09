@@ -12,7 +12,7 @@
             eu estou aqui para guiar você nessa jornada!
           </p>
         </div>
-        <a href="#goals" target="_blank"
+        <a href="#goals"
           ><button>Vamos começar!</button></a
         >
         <img class="bfr bfr-1" src="./assets/ellipse-1.svg" />
