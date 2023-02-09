@@ -12,7 +12,9 @@
             eu estou aqui para guiar você nessa jornada!
           </p>
         </div>
-        <a href="https://wa.me/5551999004881" target="_blank"><button>Vamos começar!</button></a>
+        <a href="https://wa.me/5551999004881" target="_blank"
+          ><button>Vamos começar!</button></a
+        >
         <img class="bfr bfr-1" src="./assets/ellipse-1.svg" />
         <img class="bfr bfr-2" src="./assets/ellipse-2.svg" />
       </div>
@@ -20,13 +22,25 @@
     <section id="goals">
       <h2>Qual é o seu <span>objetivo</span>?</h2>
       <div class="cards">
-        <GoalCard @click="isMuscleGainModal = true" :image="require('@/assets/ganho-massa.png')" title="Ganho de massa"
-          content="Alimentação calculada para o aumento de massa magra, de maneira saudável e eficaz."></GoalCard>
-        <GoalCard @click="isWeightLossModal = true" :image="require('@/assets/perda-de-peso.png')" title="Perda de peso"
-          content="Dietas planejadas visando a reeducação alimentar, que traz benefícios a curto e longo prazo para pessoas acima do peso.">
+        <GoalCard
+          @click="isMuscleGainModal = true"
+          :image="require('@/assets/ganho-massa.png')"
+          title="Ganho de massa"
+          content="Alimentação calculada para o aumento de massa magra, de maneira saudável e eficaz."
+        ></GoalCard>
+        <GoalCard
+          @click="isWeightLossModal = true"
+          :image="require('@/assets/perda-de-peso.png')"
+          title="Perda de peso"
+          content="Dietas planejadas visando a reeducação alimentar, que traz benefícios a curto e longo prazo para pessoas acima do peso."
+        >
         </GoalCard>
-        <GoalCard @click="isLongevityModal = true" :image="require('@/assets/longevidade.png')" title="Longevidade"
-          content="Alimentação planejada visando a qualidade de vida e até mesmo sensação de rejuvenecimento.">
+        <GoalCard
+          @click="isLongevityModal = true"
+          :image="require('@/assets/longevidade.png')"
+          title="Longevidade"
+          content="Alimentação planejada visando a qualidade de vida e até mesmo sensação de rejuvenecimento."
+        >
         </GoalCard>
       </div>
       <div class="footer">
@@ -34,23 +48,33 @@
           Busca algo mais <span>específico</span>? Vamos olhar as
           especializações.
         </p>
-        <a href="#specializations"><font-awesome-icon icon="fa-solid fa-angles-down" class="fa-xl"
-            style="color: var(--brand-purple)" /></a>
+        <a href="#specializations"
+          ><font-awesome-icon
+            icon="fa-solid fa-angles-down"
+            class="fa-xl"
+            style="color: var(--brand-purple)"
+        /></a>
       </div>
       <img class="bfr bfr-3" src="./assets/ellipse-3.svg" />
     </section>
     <section id="specializations">
       <h2>Especializações</h2>
       <div class="cards">
-        <SpecializationCard title="Nutrição vegetariana 🥑"
+        <SpecializationCard
+          title="Nutrição vegetariana 🥑"
           content="A alimentação vegetariana é extremamente saudável, se praticada da maneira correta. Com alimentos balanceados, você pode aderir de forma totalmente saudável a uma vida vegetariana 💚."
-          :image="require('@/assets/vegetariano.png')"></SpecializationCard>
-        <SpecializationCard title="Comportamento alimentar  🍔"
+          :image="require('@/assets/vegetariano.png')"
+        ></SpecializationCard>
+        <SpecializationCard
+          title="Comportamento alimentar  🍔"
           content="Alguns alimentos podem ser vistos como “vilões” de uma vida saudável. Mas na verdade, tudo é uma questão de hábito, e com uma reeducação alimentar você pode ter uma alimentação sadável e, ao mesmo tempo, curtir a vida 🥂."
-          :image="require('@/assets/comportamento-alimentar.png')"></SpecializationCard>
-        <SpecializationCard title="Nutrição na cirurgia bariátrica 🩺"
+          :image="require('@/assets/comportamento-alimentar.png')"
+        ></SpecializationCard>
+        <SpecializationCard
+          title="Nutrição na cirurgia bariátrica 🩺"
           content="A cirurgia bariátrica é extremamente agressiva para o nosso corpo (e falo por experiência própria). Então, balancear as refeições depois de passar por esse procedimento é essencial para manter uma alimentação segura e nutritiva."
-          :image="require('@/assets/cirurgia-bariatrica.png')"></SpecializationCard>
+          :image="require('@/assets/cirurgia-bariatrica.png')"
+        ></SpecializationCard>
       </div>
       <img src="./assets/ellipse-4.svg" class="bfr bfr-4" />
     </section>
@@ -88,10 +112,12 @@
             Quer melhorar a sua qualidade de vida ou tirar alguma dúvida? Você
             pode entrar em contato comigo pelo WhatsApp, rápido e prático!
           </p>
-          <a href="https://wa.me/5551999004881" target="_blank"><button>
+          <a href="https://wa.me/5551999004881" target="_blank"
+            ><button>
               <font-awesome-icon class="fa-2xl" icon="fa-brands fa-whatsapp" />
               Agende sua consulta
-            </button></a>
+            </button></a
+          >
         </div>
       </div>
     </section>
@@ -113,8 +139,7 @@ import GoalCard from "./components/GoalCard.vue";
 import SpecializationCard from "./components/SpecializationCard.vue";
 import WeightLossModal from "./components/WeightLossModal.vue";
 import MuscleGainModal from "./components/MuscleGainModal.vue";
-import LongevityModal from "./components/LongevityModal.vue"
-
+import LongevityModal from "./components/LongevityModal.vue";
 
 export default {
   name: "App",
@@ -133,7 +158,7 @@ export default {
     SpecializationCard,
     WeightLossModal,
     MuscleGainModal,
-    LongevityModal
+    LongevityModal,
   },
 
   methods: {
@@ -141,7 +166,7 @@ export default {
       this.isMuscleGainModal = false;
     },
     closeWeightModal() {
-      console.log("teste")
+      console.log("teste");
       this.isWeightLossModal = false;
     },
     closeLongevityModal() {
@@ -296,8 +321,6 @@ html {
     transition: 0.2s;
   }
 
-
-
   #goals {
     padding-bottom: 7rem;
   }
@@ -376,7 +399,7 @@ html {
     width: 26rem;
     border: 1px solid var(--brand-purple);
     border-radius: 50%;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   #about .content img:hover {
@@ -448,13 +471,252 @@ html {
 }
 
 @media only screen and (max-width: 991px) {
+  .bfr {
+    position: absolute;
+    z-index: -10;
+  }
+
+  .bfr-1 {
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .bfr-2 {
+    left: 0;
+    top: 70%;
+    width: 24%;
+    opacity: 0.8;
+  }
+
+  .bfr-3 {
+    right: 0;
+    margin-top: 15rem;
+    width: 50%;
+  }
+
+  .bfr-4 {
+    left: -30%;
+    width: 100%;
+    height: 90rem;
+    top: 180%;
+  }
+
   html {
     font-size: 87.5%;
   }
   .wrapper {
     width: 85%;
     margin: 0 auto;
+    /* background-color: #ca75ff; */
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+  }
+
+  #home {
+    height: calc(100vh - 4rem);
+  }
+
+  .welcome-text {
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .welcome-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .welcome-text p {
+    color: var(--paragraph);
+  }
+
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .welcome button {
+    background-color: transparent;
+    padding: 0.5rem 5rem;
+    border: 2px solid var(--brand-purple);
+    border-radius: 5rem;
+    color: var(--brand-purple);
+    transition: 0.2s;
+  }
+
+  .welcome button:hover {
+    background-color: var(--brand-purple);
+    color: white;
+    box-shadow: 5px 5px 0px var(--brand-purple-shadow);
+    transition: 0.2s;
+  }
+  #goals {
+    padding-bottom: 7rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #goals .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 4rem;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  #goals .footer {
+    margin: 0 auto;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  #goals .footer a {
+    transition: 0.1s;
+    align-self: center;
+  }
+
+  #goals .footer a:active {
+    transform: translateY(0.2rem);
   }
   
+  #specializations {
+    flex-direction: column;
+  }
+
+  #specializations .cards {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #about h2 {
+    text-align: left;
+  }
+
+  #about {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    margin-top: 10rem;
+  }
+
+  #about .text {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  #about .text span {
+    color: var(--brand-purple);
+  }
+
+  #about .text h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  #about .text p {
+    color: var(--paragraph);
+    font-size: 1rem;
+  }
+
+  #about .text p span {
+    background-color: #f2dcff;
+  }
+
+  #about .bio {
+    display: flex;
+    margin-top: 2.5rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #about .content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  #about .content img {
+    width: 100%;
+    border: 1px solid var(--brand-purple);
+    border-radius: 50%;
+    transition: 0.5s;
+    margin-top: 3rem;
+  }
+
+  #contact {
+    padding-top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #contact .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #contact .content img {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px var(--brand-purple);
+  }
+  
+  #contact .content .text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 2.25rem;
+    align-items: center;
+  }
+  
+  #contact .content .text h2 {
+    font-size: 2.2rem;
+    text-align: right;
+  }
+
+  #contact .content .text p {
+    font-size: 1rem;
+  }
+
+  #contact .content .text a {
+    text-decoration: none;
+  }
+
+  #contact .content .text button {
+    background-color: transparent;
+    padding: 0.5rem 2rem;
+    border: 2px solid var(--brand-purple);
+    border-radius: 20px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--brand-purple);
+    transition: 0.1s;
+    align-items: center;
+
+    display: flex;
+    gap: 1.875rem;
+  }
+
+  #contact .content .text button:active {
+    background-color: var(--brand-purple);
+    color: white;
+    box-shadow: 5px 5px 0px var(--brand-purple-shadow);
+    /* transition: 0.2s; */
+  }
 }
 </style>

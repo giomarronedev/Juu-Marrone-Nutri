@@ -63,4 +63,40 @@ export default {
     font-size: 1rem;
   }
 }
+@media only screen and (max-width: 991px) {
+  main {
+    width: 80%;
+    max-width: 25rem;
+    height: fit-content;
+    border: 1px solid var(--brand-purple);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0.37%, rgba(158, 0, 255, 0.04) 100%);
+    gap: 1rem;
+    transition: .2s;
+    cursor: pointer;
+    backdrop-filter: blur(3px);
+    margin: 0 auto;
+  }
+
+  main:active {
+    /* transform: translateY(-2rem); */
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px var(--brand-purple);
+  }
+
+  img {
+    border-radius: 1rem;
+    width: 100%;
+  }
+
+  p {
+    color: var(--paragraph);
+    font-size: 1rem;
+  }
+}
 </style>
